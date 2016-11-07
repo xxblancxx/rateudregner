@@ -11,20 +11,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>
         <nav class="topNavigation">
             <a href="Hjem">Hjem</a>
             <a href="Profiler">Profiler</a>
             <a href="Gemte tilbud">Gemte tilbud</a>
             <a href="Support">Support</a>
         </nav>
+            </div>
         <div>
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <h1 style="text-align: center; color: dimgray">Rate Udregner</h1>
                     <div class="content">
-
-                        <div style="margin: 15px">
+                        <div><h1>Rate Udregner</h1></div>
+                        <div style="margin: 25px;">
 
                             <div class="marginedDiv">
                                 <asp:Label ID="Label4" runat="server" Text="Land"></asp:Label>
