@@ -14,13 +14,14 @@ h1 {
     -moz-border-radius: 10px;
     border-radius: 10px;
     width: 500px;
-    height: 350px;
+    height: 400px;
     margin: 0 auto;
     margin-top: 50px;
 }
 
 .marginedDiv {
-    margin: 10px 0px;
+    margin: 10px 0;
+    margin-left: 20%;
 }
 
 .topNavigation {
@@ -64,6 +65,7 @@ h1 {
     border: 1px solid #ccc;
     background-color: mintcream;
     text-align: center;
+    margin-left: 25%;
 }
 
 .StyledTextbox {
@@ -75,14 +77,38 @@ h1 {
     border: 1px solid #ccc;
     background-color: mintcream;
     text-align: center;
+    margin-left: 25%;
 }
 
-@media screen and (max-width: 700px) , screen 
-  and (max-device-width: 700px)  {
+.StyledTextboxSmall {
+    border-radius: 4px;
+    padding: 3px;
+    overflow: hidden;
+    width: 75px;
+    height: 28px;
+    border: 1px solid #ccc;
+    background-color: mintcream;
+    text-align: center;
+    margin: 10px 0;
+    margin-left: 25%;
+}
+
+@media /*screen and (max-width: 700px),*/ screen and (max-device-width: 700px) {
     /*// CSS Inside these tags happen when above max and min are fulfilled*/
+    .wrapper {
+        width: auto;
+        margin: auto;
+    }
+
+    html {
+        -webkit-text-size-adjust: none;
+    }
+
     .content {
         display: block;
-        width: 95%;
+        width: 90%;
+        height: 90%;
+        float: none;
         margin: 0 auto;
     }
 
@@ -90,6 +116,26 @@ h1 {
         font-size: 30px;
         text-align: center;
         color: dimgray;
+    }
+
+    .marginedDiv {
+        margin: 10px 0;
+        margin-left: 0%;
+    }
+
+    .StyledDropDown {
+        margin-left: 0%;
+        width: 45%;
+    }
+
+    .StyledTextbox {
+        margin-left: 0%;
+        width: 45%;
+    }
+
+    .StyledTextboxSmall {
+        margin-left: 0%;
+        width: 25%;
     }
 
     .topNavigation {
